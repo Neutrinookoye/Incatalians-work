@@ -4,7 +4,7 @@
 }
 body {
     margin: 0;
-    padding: 0;
+    padding: 0; 
 }
 
 
@@ -72,8 +72,77 @@ body {
     }
     .def-navbar1 {
         height: 5.8rem;
+        margin-bottom: 5rem;
     }
+    .def-navbar2 {
+        height: 8rem;
+    }
+    .nav2-logo {
+        margin-top: 3rem;
+    }
+    .navnav {
+        background: #fff;
+    }
+    .navnav .js-scroll {
+        display: block;
+        text-align: left;
+        color: #1f2839;
+    }
+    .navnav .js-scroll.active {
+        background: #fff;
+        
+    }
+    .def-navbar2 .js-scroll {
+        color: #1f2839 !important;
+        height: 1rem;
+        padding-top: .5rem;
+        width: 100%;
+        text-align: center;
+        font-weight: 400 !important;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        display: block !important;
+    }
+    .def-navbar2 ul li {
+        width: 100%;
+    }
+    .def-navbar2 .active {
+        background-color: #fff;
+    }
+    .def-navbar2 .js-scroll:active {
+        background-color: #fff;
+    }
+    
 }
+
+/*---------------------------------------Back to top----------------------------------------------*/
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #6bb42f;
+    box-shadow: 2px 3px 4px #111;
+    color: #fff;
+    width: 35px;
+    height: 32px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50%;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 11;
+    padding-top: .5rem;
+}
+  
+.back-to-top i {
+    padding-top: 12px;
+    color: #fff;
+}
+
+
 
 
 /* Second Navigation Bar */
@@ -111,8 +180,43 @@ body {
 .def-navbar2 .js-scroll:active {
     background-color: #6bb42f;
 }
+.navbar-toggler {
+    position: relative;
+    margin-top: 3.5rem;
+}
+  
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: 0;
+}  
 
-
+.navbar-toggler span {
+    display: block;
+    background-color: #fff;
+    height: 2px;
+    width: 20px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    left: 0;
+    /* opacity: 1; */
+}
+@media(min-width: 992px) {
+    .navbar-reduce {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-color: #1f2839;
+        padding: .2rem .2rem 1rem .2rem;
+        width: 100%;
+        box-shadow: 2px -5px 14px 1px #111;
+        /* z-index: 9999; */
+        padding-top: 0;
+        padding-bottom: 0;
+        position: fixed;
+    }
+    
+}
 
 
 
@@ -125,7 +229,7 @@ body {
     color: white;
     position: absolute;
     top: 15rem;
-    left: 6rem;
+    left: 10rem;
     text-align: left;
     z-index: 999;
 }
@@ -136,25 +240,301 @@ body {
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
     font-size: 46px;
-    padding: 0 38rem 0 0 ;
+    padding: 0 37rem 0 0 ;
 }
 .first-carousel .caption p {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-right: 25rem;
 }
 .first-carousel .caption a {
     font-size: 14px;
 }
+.btn-jumbo {
+    background: #6bb42f;
+    box-shadow: 2px 3px 5px #111;
+    color: white;
+    font-weight: 700;
+}
+@media(max-width : 1200px) {
+    .first-carousel .caption h1 {
+        padding: 0 16rem 0 0 ;
+    }
+    .first-carousel .caption {
+        top: 13rem;
+        left: 10rem;
+    }
+    
+}
+@media(max-width : 992px) {
+    .first-carousel .caption h1 {
+        padding: 0 1rem 0 0 ;
+    }
+    .first-carousel .caption {
+        top: 9rem;
+        left: 3rem;
+    }
+    .first-carousel .caption p {
+        padding-right: 2rem;
+    }
+    
+}
+@media(max-width : 767px) {
+    .first-carousel .caption h1 {
+        padding: 0 ;
+        font-size: 24px;
+    }
+    .first-carousel .caption {
+        top: 8rem;
+        left: 3rem;
+    }
+    .first-carousel .caption p {
+        padding-right: 0;
+    }
+    
+}
+@media(max-width : 576px) {
+    .first-carousel .caption {
+        top: 5rem;
+        left: 3rem;
+    }
+    .first-carousel .caption p {
+        padding-right: 0;
+    }
+    
+}
+@media(max-width : 455px) {
+    #topCarousel .first-slide {
+        width: 100%;
+        filter: brightness(0.7);
+        height: 20rem;
+    }    
+}
+
+
+/* What we do section styling */
+.what {
+    padding: 4rem 10%;
+}
+.what-box {
+    background: #1f2839;
+    padding:  2.5rem;
+    border-radius: .3rem;
+}
+.what-box h2 {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.what-box p {
+    font-size: 14px;
+    margin-bottom: 2rem;
+    padding-bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.what-ul li {
+    position: relative;
+    list-style-type: none !important;
+    display: block;
+    line-height: 1.3em;
+    margin: 5px 0 0 0;
+    padding: 4px 0 4px 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.what-ul li i {
+    position: absolute;
+    left: 0;
+    transition: all .5s ease-in-out;
+}
+.what-ul li:hover>i {
+    transform: translateX(.3rem);
+}
+@media(max-width : 767px) {
+    .what {
+        padding: 4rem 2% !important;
+    }
+}
+
+
+/* Why choose us section */
+.choose-box {
+    padding: 1.8rem 1.8rem 1rem 1.8rem;
+    margin-bottom: 1rem;
+    transition: all .5s ease-in-out;
+}
+.choose-box:hover {
+    box-shadow: 1px 2px 4px 2px #333;
+    border-radius: .1rem;
+}
+.choose-box i {
+    font-size: 4rem;
+}
+.choose-box h4 {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+}
+.choose-box p {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 
 
+/* Our Products section */
+.our-prod {
+    background: rgba(107,180,47, 0.8);
+    padding: 3rem 0 5rem 0;
+    margin: 0;
+    overflow: hidden;
+}
+.prod-box {
+    padding: 1rem;
+    color: #fff;
+}
+.prod-box h3 {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 1.5rem;
+}
+.prod-box p {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.our-prod-btn {
+    display: block;
+    background: #1f2839;
+    color: white;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 3rem;
+    padding-top: .8rem;
+    font-weight: 600;
+    border-radius: 3rem;
+    box-shadow: 2px 3px 6px #111;
+    transition: all .5s ease-in-out;
+}
+.our-prod-btn:hover {
+    color: #1f2839;
+    background: #fed602;
+}
 
 
+/* Stats section styling */
+.counts {
+    background: #1f2839;
+    border-bottom: 1px solid #fff;
+    position: relative;
+    overflow: hidden;
+}
+.stats-div {
+    padding: 2.2rem 2rem 1.5rem 5rem;
+    overflow: hidden;
+}
+.stats-div i{
+    color: #6bb42f;
+    font-size: 44px;
+    margin-bottom: .4rem;
+    z-index: 9999999;
+}
+.stats-div h2 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .05rem;
+    z-index: 9999999;
+}
+.stats-div p {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: 600;
+    z-index: 9999;
+}
+.stat-review {
+    background: url('../plugins/images/banner/myanmar-banner.png');
+    position: relative;
+}
+.stat-review .no-pad {
+    padding: 0;
+}
+.stat-review::before {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    content: "";
+    background: rgba(255, 255, 255 , .5);
+}
+.abs-box {
+    height: 100%;
+    width: 5rem;
+    transform: skew(-20deg);
+    position: absolute;
+    background: #1f2839;
+    left: -2.5rem;
+    z-index: 99;
+}
+@media(max-width : 1200px) {
+    .stats-div {
+        padding: 2.2rem 2rem 1.5rem 2rem;
+        overflow: hidden;
+    }
+    
+}
+@media(min-width : 767px) {
+    .stats-box img {
+        width: 10rem !important;
+        margin-top: 6rem;
+    }
+    .stats-box {
+        padding: 0 3rem;
+        margin: 0;
+    }
+}
+@media(max-width : 992px) {
+    .stats-box {
+        padding: 0 0 0 6.5rem;
+        margin: 0;
+    }
+}
+@media(max-width : 767px) {
+    .stats-div {
+        padding: 2.2rem 0rem 1.5rem 0rem;
+    }
+    .stats-div p {
+        margin-bottom: 3rem;
+    }
+    .stats-box {
+        padding: 0 ;
+        margin: 0;
+    }
+    .stat-review {
+        background: transparent;
+        margin-bottom: 2rem;
+    }
+    .stat-review::before {
+        background: transparent;
+    }
+    .abs-box {
+        display: none;
+    }
+    .abs-box2 {
+        background: url('../plugins/images/banner/myanmar-banner.png');
+        right: -57%;
+        position: absolute;
+        bottom: 0;
+        width: 70%;
+        height: 50%;
+        transform: skew(-30deg);
+    }
 
-
-
-
-
+}
 
 
 /* -----------------------------------------------End of index page styling------------------------------------------------- */
