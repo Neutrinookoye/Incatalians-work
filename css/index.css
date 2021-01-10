@@ -114,6 +114,13 @@ body {
     }
     
 }
+@media(max-width : 576px) {
+    .def-navbar1 {
+        height: 2rem;
+        margin-bottom: 5rem;
+    }    
+
+}
 
 /*---------------------------------------Back to top----------------------------------------------*/
 
@@ -216,7 +223,21 @@ body {
     }
     
 }
-
+@media(max-width : 576px) {
+    .def-navbar2 {
+        position: absolute;
+        top: 1.8rem !important;
+        background-color: #1f2839;
+        padding: .2rem .2rem 1rem .2rem;
+        width: 86%;
+        left: 7%;
+        box-shadow: 2px -5px 14px 1px #111;
+        border-radius: .2rem;
+        z-index: 9999;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
 
 
 /* Jumbotron with carousel */
@@ -307,7 +328,7 @@ body {
     #topCarousel .first-slide {
         width: 100%;
         filter: brightness(0.7);
-        height: 20rem;
+        height: 18.5rem;
     }    
 }
 
@@ -355,6 +376,9 @@ body {
     .what {
         padding: 4rem 2% !important;
     }
+    .choose-box i {
+        font-size: 3rem !important;
+    }    
 }
 
 
@@ -941,6 +965,9 @@ body {
     .section-header .lines {
         padding: 0 6.4rem;
     }
+    .section-header h1{
+        font-size: 30px;
+    }    
 }
 @media(max-width : 576px) {
     .section-header .lines {
