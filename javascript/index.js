@@ -51,6 +51,15 @@
     time: 2000
   });
 
+  // Preloader
+  $(window).on('load', function () {
+    if ($('#preloader').length) {
+      $('#preloader').delay(400).fadeOut('slow', function () {
+        $(this).remove();
+      });
+    }
+  });
+
   /*--/ Navbar Menu Reduce /--*/
 	$(window).trigger('scroll');
 	$(window).on('scroll', function () { 
